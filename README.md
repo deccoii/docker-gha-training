@@ -286,11 +286,6 @@ Three distinct job types:
    - API endpoint validation
    - Dependency on unit tests passing
 
-3. **Security Scanning (`security-scan` job)**
-   - Bandit for Python security issues
-   - Safety for dependency vulnerabilities
-   - Artifact upload for reports
-
 **Performance Optimizations:**
 - ✅ Pip cache for faster dependency installation
 - ✅ Docker layer caching
@@ -348,6 +343,8 @@ pip install pytest pytest-cov flask-testing requests
 
 # Run tests
 pytest app/ -v --cov=app
+```
 
-# Test Outputs
+**Test Outputs**
 ![Test outputs](/images/tests.png)
+
